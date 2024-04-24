@@ -3,18 +3,21 @@ import React from "react";
 const Reviews = () => {
   const reviews = [
     {
+      id: 1,
       name: "ペコさん",
       date: "2024年4月",
       title: "エアコンクリーニング / 壁掛けタイプ",
       text: "内容です内容です内容です",
     },
     {
+      id: 2,
       name: "ペコさん",
       date: "2024年4月",
       title: "エアコンクリーニング / 壁掛けタイプ",
       text: "内容です内容です内容です",
     },
     {
+      id: 3,
       name: "ペコさん",
       date: "2024年4月",
       title: "エアコンクリーニング / 壁掛けタイプ",
@@ -27,7 +30,7 @@ const Reviews = () => {
         <h2 className="text-sm font-medium mb-4">新着口コミ</h2>
         <div className="">
           {reviews.map((review) => (
-            <div className="w-[50%] mb-8" key={review}>
+            <div className="w-[50%] mb-8" key={review.id}>
               <div className="flex items-center">
                 <div className="mr-2 bg-gray-400 flex items-center rounded-[50%] w-[40px] h-[40px] justify-center ">
                   {review.name.slice(0, 1)}

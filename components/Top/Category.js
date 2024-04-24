@@ -5,6 +5,7 @@ import CategoryItem from "./CategoryItem";
 export default function App() {
   const categories = [
     {
+      id: 1,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -19,6 +20,7 @@ export default function App() {
       ),
     },
     {
+      id: 2,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -33,6 +35,7 @@ export default function App() {
       ),
     },
     {
+      id: 3,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -47,6 +50,7 @@ export default function App() {
       ),
     },
     {
+      id: 4,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -61,6 +65,7 @@ export default function App() {
       ),
     },
     {
+      id: 5,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -75,6 +80,7 @@ export default function App() {
       ),
     },
     {
+      id: 6,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -89,6 +95,7 @@ export default function App() {
       ),
     },
     {
+      id: 7,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -103,6 +110,7 @@ export default function App() {
       ),
     },
     {
+      id: 8,
       label: "Category 1",
       title: "ハウスクリーニング",
       content: (
@@ -123,9 +131,10 @@ export default function App() {
       <div className="p-4 mb-16 bg-white box-sha shadow-lg">
         <h2 className="text-sm font-medium mb-4">カテゴリーから探す</h2>
         <Accordion>
-          {categories.map((category, index) => (
+          {categories.map((category) => (
             <AccordionItem
-              key={index}
+            className="p-4"
+              key={category.id}
               title={category.title}
               label={category.label}
             >

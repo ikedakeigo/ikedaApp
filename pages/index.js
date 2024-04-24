@@ -12,16 +12,18 @@ import Reviews from "../components/Top/Reviews";
 
 export default function App() {
   return (
-    <section className="w-[520px] min-h-[100vh] mx-auto">
+    <>
       <Headers />
-      <TopMv />
-      <Coupon />
-      <Recommend />
-      <Popular />
-      <Banner />
-      <Category />
-      <Reviews />
+      <section className="xl:w-[1280px] md:min-w-[640px] min-h-[100vh] mx-auto">
+        <TopMv />
+        <Coupon />
+        <Recommend />
+        <Popular />
+        <Banner />
+        <Category />
+        <Reviews />
+      </section>
       <Footer />
-    </section>
+    </>
   );
 }

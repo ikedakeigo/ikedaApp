@@ -4,21 +4,21 @@ const Banner = () => {
   return (
     <section>
       <div className="p-4">
-        <a href="#" className='block w-full'>
+        <a href="#" className='block w-full flex justify-center'>
           <picture>
             <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
           </picture>
         </a>
       </div>
       <div className="p-4">
-        <a href="#" className='block w-full'>
+        <a href="#" className='block w-full flex justify-center'>
           <picture>
             <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
           </picture>
         </a>
       </div>
       <div className="p-4">
-        <a href="#" className='block w-full'>
+        <a href="#" className='block w-full flex justify-center'>
           <picture>
             <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
           </picture>

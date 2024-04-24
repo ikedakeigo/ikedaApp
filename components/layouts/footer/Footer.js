@@ -9,7 +9,7 @@ const Footer = () => {
       text-black
       w-full"
       >
-        <ul className="">
+        <ul className="xl:flex md:block justify-around ">
           <li className="p-2">イケダのマーケットについて</li>
           <li className="p-2">出店について</li>
           <li className="p-2">運用メディア・SNS</li>
@@ -20,7 +20,7 @@ const Footer = () => {
           text-center mt-10
         "
         >
-          <p>© 2021 Ikeda Market</p>
+          <p>© 2024 Ikeda Market</p>
         </div>
       </nav>
     </footer>

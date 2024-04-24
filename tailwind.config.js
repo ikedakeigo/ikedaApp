@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +10,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        // ブレイクポイントの上書き
+        sm: "640px", //デフォルトは640px
+        md: "768x", //デフォルトは768px
+        xl: "1024px", //デフォルトは1024px
+        // ブレイクポイントの追加
+        "my-break-point": "350px",
+      },
+    },
   },
   plugins: [],
 };

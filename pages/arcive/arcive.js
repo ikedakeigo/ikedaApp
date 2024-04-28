@@ -1,26 +1,26 @@
 import React from "react";
-import "../../styles/globals.css";
 import Headers from "../../components/layouts/header/Header";
 import Footer from "../../components/layouts/footer/Footer";
 import Selecter from "../../components/Selecter/Selecter";
 import Person from "./components/person/Person";
+import Content from "../../components/layouts/content/Content";
 
-const DetailPage = () => {
+const arcive = () => {
   return (
     <>
       <Headers />
-      <section className="xl:w-[1280px] md:min-w-[640px] min-h-[100vh] mx-auto">
+      <Content>
         <h1>カテゴリータイトル</h1>
         <div className=" gap-4">
           {/* コンポーネント */}
           <Selecter />
           <Person />
-
         </div>
-      </section>
+      </Content>
+
       <Footer />
     </>
   );
 };
 
-export default DetailPage;
+export default arcive;

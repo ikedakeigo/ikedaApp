@@ -1,31 +1,24 @@
-import React from 'react'
+import React from "react";
+import bannerData from "../../data/banner";
 
 const Banner = () => {
   return (
     <section>
-      <div className="p-4">
-        <a href="#" className='block w-full flex justify-center'>
-          <picture>
-            <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
-          </picture>
-        </a>
-      </div>
-      <div className="p-4">
-        <a href="#" className='block w-full flex justify-center'>
-          <picture>
-            <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
-          </picture>
-        </a>
-      </div>
-      <div className="p-4">
-        <a href="#" className='block w-full flex justify-center'>
-          <picture>
-            <img src="/image/bnr_top.webp" alt="" className='rounded-lg  shadow-sm' />
-          </picture>
-        </a>
-      </div>
+      {bannerData.map((banner) => (
+        <div className="p-4" key={banner.id}>
+          <a href={banner.href} className="block w-full flex justify-center">
+            <picture>
+              <img
+                src={banner.image}
+                alt={banner.alt}
+                className="rounded-lg  shadow-sm"
+              />
+            </picture>
+          </a>
+        </div>
+      ))}
     </section>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

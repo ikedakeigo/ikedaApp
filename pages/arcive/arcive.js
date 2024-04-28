@@ -3,6 +3,7 @@ import "../../styles/globals.css";
 import Headers from "../../components/layouts/header/Header";
 import Footer from "../../components/layouts/footer/Footer";
 import Selecter from "../../components/Selecter/Selecter";
+import Person from "./components/person/Person";
 
 const DetailPage = () => {
   return (
@@ -13,6 +14,7 @@ const DetailPage = () => {
         <div className=" gap-4">
           {/* コンポーネント */}
           <Selecter />
+          <Person />
 
         </div>
       </section>

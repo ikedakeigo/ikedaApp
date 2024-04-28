@@ -19,7 +19,7 @@ export default function Header() {
 
         <Link className="z-50" href="/" onClick={handleMenuClose}>
           <Image
-            src="next.svg"
+            src="/next.svg"
             width={40}
             height={40}
             alt="イケダのマーケット"

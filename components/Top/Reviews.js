@@ -1,35 +1,13 @@
 import React from "react";
+import reviewsData from "../../data/reviews";
 
-const Reviews = () => {
-  const reviews = [
-    {
-      id: 1,
-      name: "ペコさん",
-      date: "2024年4月",
-      title: "エアコンクリーニング / 壁掛けタイプ",
-      text: "内容です内容です内容です",
-    },
-    {
-      id: 2,
-      name: "ペコさん",
-      date: "2024年4月",
-      title: "エアコンクリーニング / 壁掛けタイプ",
-      text: "内容です内容です内容です",
-    },
-    {
-      id: 3,
-      name: "ペコさん",
-      date: "2024年4月",
-      title: "エアコンクリーニング / 壁掛けタイプ",
-      text: "内容です内容です内容です",
-    },
-  ];
+export default function Reviews() {
   return (
     <section>
       <div className="p-4 mb-32 bg-white box-sha shadow-lg">
         <h2 className="text-sm font-medium mb-4">新着口コミ</h2>
         <div className="">
-          {reviews.map((review) => (
+          {reviewsData.map((review) => (
             <div className="w-[50%] mb-8" key={review.id}>
               <div className="flex items-center">
                 <div className="mr-2 bg-gray-400 flex items-center rounded-[50%] w-[40px] h-[40px] justify-center ">
@@ -52,6 +30,6 @@ const Reviews = () => {
       </div>
     </section>
   );
-};
+}
 
-export default Reviews;
+// export default Reviews;

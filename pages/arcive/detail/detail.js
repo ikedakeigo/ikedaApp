@@ -3,7 +3,7 @@ import Header from "../../../components/layouts/header/Header";
 import Content from "../../../components/layouts/content/Content";
 import Footer from "../../../components/layouts/footer/Footer";
 import { Slider } from "../../../components/molecules/Slider/Slider";
-import PersonTitle from "./components/personDetail/personTitle";
+import PersonTitle from "./components/personDetail/PersonTitle";
 import PersonGood from "./components/personDetail/PersonGood";
 import PersonProf from "./components/personDetail/PersonProf";
 

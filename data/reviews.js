@@ -5,6 +5,7 @@ const reviews = [
     date: "2024年4月",
     title: "エアコンクリーニング / 壁掛けタイプ",
     text: "内容です内容です内容です",
+    initial: "P",
   },
   {
     id: 2,

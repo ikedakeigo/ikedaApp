@@ -1,7 +1,7 @@
 const person = [
   {
     id: 1,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -17,7 +17,7 @@ const person = [
   },
   {
     id: 2,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -30,7 +30,7 @@ const person = [
   },
   {
     id: 3,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -43,7 +43,7 @@ const person = [
   },
   {
     id: 4,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -56,7 +56,7 @@ const person = [
   },
   {
     id: 5,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -69,7 +69,7 @@ const person = [
   },
   {
     id: 6,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -82,7 +82,7 @@ const person = [
   },
   {
     id: 7,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -95,7 +95,7 @@ const person = [
   },
   {
     id: 8,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -108,7 +108,7 @@ const person = [
   },
   {
     id: 9,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,
@@ -121,7 +121,7 @@ const person = [
   },
   {
     id: 10,
-    href: "#",
+    href: "/arcive/detail/detail",
     ranking: 1,
     star: 5,
     starCount: 5,

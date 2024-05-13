@@ -7,7 +7,7 @@ import PersonTitle from "./components/personDetail/PersonTitle";
 import PersonGood from "./components/personDetail/PersonGood";
 import PersonProf from "./components/personDetail/PersonProf";
 import PersonReview from "./components/personDetail/PersonReview";
-import PersonServise from "./components/personDetail/personServise";
+import PersonServise from "./components/personDetail/PersonServise";
 import PersonWorks from "./components/personDetail/PersonWorks";
 import CancellationPolicy from "./components/cancellPolicy/CancellationPolicy";
 import PersonShopInfo from "./components/personDetail/PersonShopInfo";

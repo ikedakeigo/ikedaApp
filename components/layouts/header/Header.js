@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="py-6 px-4 flex justify-between items-center max-w-[1280px] mx-auto">
+    <header className="py-6 px-4 flex justify-between items-center mx-auto fixed z-10 w-[100%] bg-white">
 
         <Link className="z-50" href="/" onClick={handleMenuClose}>
           <Image
@@ -30,7 +30,7 @@ export default function Header() {
           className={
             isOpen
               ? "z-40 bg-blue-100 fixed top-0 right-0 bottom-0 h-screen flex flex-col w-[72vw]"
-              : "fixed right-[-100%] md:right-4 w-full bg-red-400"
+              : "fixed right-[-100%]  w-full"
           }
         >
           <ul
@@ -67,7 +67,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <button className="z-50 space-y-2 md:hidden" onClick={handleMenuOpen}>
+        <button className="z-50 space-y-2 " onClick={handleMenuOpen}>
           <span
             className={
               isOpen

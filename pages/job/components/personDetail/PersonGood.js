@@ -1,5 +1,5 @@
 import React from "react";
-import personData from "../../../../../data/person";
+import personData from "../../../../data/person";
 
 const PersonGood = () => {
 

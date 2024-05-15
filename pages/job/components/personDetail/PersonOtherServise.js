@@ -1,5 +1,5 @@
 import React from "react";
-import personData from "../../../../../data/person-service";
+import personData from "../../../../data/person-service";
 
 const PersonOtherServise = () => {
 

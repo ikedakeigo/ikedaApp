@@ -251,6 +251,21 @@
     "@nextui-org/system" "2.1.2"
     "@nextui-org/use-measure" "2.0.1"
 
+"@nextui-org/pagination@^2.0.30":
+  version "2.0.30"
+  resolved "https://registry.npmjs.org/@nextui-org/pagination/-/pagination-2.0.30.tgz"
+  integrity sha512-tdlSbNTpqr+aww8h9+7d2Iu0ZX6GGtREeVAbf2+jr5j7VF/VVMVm2eaLJ4m1vw7VQIrEMwKNrcP8QCMMT0a+SQ==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.13"
+    "@nextui-org/shared-icons" "2.0.7"
+    "@nextui-org/shared-utils" "2.0.5"
+    "@nextui-org/use-pagination" "2.0.6"
+    "@react-aria/focus" "^3.16.2"
+    "@react-aria/i18n" "^3.10.2"
+    "@react-aria/interactions" "^3.21.1"
+    "@react-aria/utils" "^3.23.2"
+    scroll-into-view-if-needed "3.0.10"
+
 "@nextui-org/react-rsc-utils@2.0.12":
   version "2.0.12"
   resolved "https://registry.npmjs.org/@nextui-org/react-rsc-utils/-/react-rsc-utils-2.0.12.tgz"
@@ -327,6 +342,14 @@
   version "2.0.1"
   resolved "https://registry.npmjs.org/@nextui-org/use-measure/-/use-measure-2.0.1.tgz"
   integrity sha512-uEtdrdBdFz4Fgbfk2vmQ+rEb+eFa5o4yI90udasvfpaIrMBfrFOlRW5+yn3uXKB8JThET4Gf2on/wlJpo567Dg==
+
+"@nextui-org/use-pagination@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.npmjs.org/@nextui-org/use-pagination/-/use-pagination-2.0.6.tgz"
+  integrity sha512-/EIrpC/q6xQNDQrODivC3VVkphVmExiFjqqXdyxOHWnhfgC1BhQOqGK0qIPvDoHmk1U7ULKnlh/VuYjGtfTJgg==
+  dependencies:
+    "@nextui-org/shared-utils" "2.0.5"
+    "@react-aria/i18n" "^3.10.2"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1048,6 +1071,11 @@ commander@^4.0.0:
   version "4.1.1"
   resolved "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz"
   integrity sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
+
+compute-scroll-into-view@^3.0.2:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-3.1.0.tgz"
+  integrity sha512-rj8l8pD4bJ1nx+dAkMhV1xB5RuZEyVysfxJqB1pRchh1KVvwOv9b7CGB8ZfjTImVv2oF+sYMUkMZq6Na5Ftmbg==
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -2813,6 +2841,13 @@ scheduler@^0.23.0:
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
   dependencies:
     loose-envify "^1.1.0"
+
+scroll-into-view-if-needed@3.0.10:
+  version "3.0.10"
+  resolved "https://registry.npmjs.org/scroll-into-view-if-needed/-/scroll-into-view-if-needed-3.0.10.tgz"
+  integrity sha512-t44QCeDKAPf1mtQH3fYpWz8IM/DyvHLjs8wUvvwMYxk5moOqCzrMSxK6HQVD0QVmVjXFavoFIPRVrMuJPKAvtg==
+  dependencies:
+    compute-scroll-into-view "^3.0.2"
 
 semver@^6.3.1:
   version "6.3.1"

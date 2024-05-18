@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Coupon = () => {
   return (
@@ -13,9 +14,9 @@ const Coupon = () => {
             今すぐダウンロード
           </p>
         </div>
-        <a href="#" className="inline-block w-full bg-black rounded-lg shadow-lg text-white font-bold text-center p-4 min-h-[56px] ">
+        <Link href="#" className="inline-block w-full bg-black rounded-lg shadow-lg text-white font-bold text-center p-4 min-h-[56px] ">
           クーポンの詳細を見る
-        </a>
+        </Link>
       </div>
     </section>
   );

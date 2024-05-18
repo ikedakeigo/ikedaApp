@@ -358,11 +358,11 @@ const Detail = () => {
             <a className="flex w-full mb-8 last:mb-0 text-gray-800" href="#">
               <div className="flex-none w-1/3">
                 <div className="relative">
-                  <img
+                  {/* <img
                     className="w-full object-cover"
                     src="/image/person-service/person-service1.jpg"
                     alt=""
-                  />
+                  /> */}
                 </div>
               </div>
               <div className="flex-auto pl-2">

@@ -51,17 +51,17 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="/job">
                 カテゴリ一覧
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="/mypage">
                 マイページ
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="#">
                 ヘルプ
               </Link>
             </li>

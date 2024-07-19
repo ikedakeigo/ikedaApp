@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@nextui-org/accordion": "^2.0.31",
+    "@nextui-org/pagination": "^2.0.30",
     "@nextui-org/theme": "^2.2.3",
     "@splidejs/react-splide": "^0.7.12",
+    "axios": "^1.6.8",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.9",
     "next": "14.2.2",

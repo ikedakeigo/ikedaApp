@@ -1,29 +1,29 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import '@splidejs/splide/css'; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
-
-export const Slider = () => {
+import "@splidejs/splide/css"; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
+import axios from "axios";
+import { useEffect, useState } from "react";
+export const Slider = ({ list }) => {
   return (
     <>
       <Splide
         aria-label="私のお気に入りの画像集"
         options={{
-          type: 'loop', // ループさせる
+          type: "loop", // ループさせる
           autoplay: true, // 自動再生を有効
           interval: 3000, // 自動再生の間隔を3秒に設定
         }}
       >
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg" alt="かわいい猫の画像 part1" />
-        </SplideSlide>
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg" alt="かわいい猫の画像 part2" />
-        </SplideSlide>
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg" alt="かわいい猫の画像 part3" />
-        </SplideSlide>
+        {list.slider.map((item) => (
+          <SplideSlide key={item.id}>
+            <img
+              className="slide-img"
+              src={item.url}
+              alt={list.title}
+            />
+          </SplideSlide>
+        ))}
       </Splide>
 
-      {/* 画像の高さを揃えて表示させるために以下スタイルを適用 */}
       <style jsx>{`
         .slide-img {
           display: block;

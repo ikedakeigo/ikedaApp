@@ -1,12 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 
 const TopMv = () => {
   return (
     <section>
       <div className="p-4 mb-16 bg-white box-sha shadow-lg  ">
-        <a href="#"  className='flex justify-center'>
+        <Link href="#"  className='flex justify-center'>
           <img className='rounded-2xl' src="/image/bnr_aircon.webp" alt="" />
-        </a>
+        </Link>
       </div>
     </section>
   )

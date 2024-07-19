@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import bannerData from "../../data/banner";
 
 const Banner = () => {
@@ -6,7 +7,7 @@ const Banner = () => {
     <section>
       {bannerData.map((banner) => (
         <div className="p-4" key={banner.id}>
-          <a href={banner.href} className="block w-full flex justify-center">
+          <Link href={banner.href} className="block w-full flex justify-center">
             <picture>
               <img
                 src={banner.image}
@@ -14,7 +15,7 @@ const Banner = () => {
                 className="rounded-lg  shadow-sm"
               />
             </picture>
-          </a>
+          </Link>
         </div>
       ))}
     </section>

@@ -7,7 +7,6 @@ const person = [
     starCount: 5,
     reviewsCount: 50,
     title: "速攻回答！福岡佐賀◎3ドア/ドラム対応可！洗濯機設置無料ᕙ( ˙꒳​˙ )ᕗ",
-    prefecture: "福岡県",
     price: "9,200",
     imgLogo: "/image/person/person.jpg",
     alt: "速攻回答！福岡佐賀◎3ドア/ドラム対応可！洗濯機設置無料ᕙ( ˙꒳​˙ )ᕗ",

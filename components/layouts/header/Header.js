@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="py-6 px-4 flex justify-between items-center mx-auto fixed z-10 w-[100%] bg-white">
+    <header className="py-6 px-4 flex justify-between items-center mx-auto sticky top-0 z-[999] w-[100%] bg-white">
 
         <Link className="z-50" href="/" onClick={handleMenuClose}>
           <Image
@@ -51,17 +51,17 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="/job">
                 カテゴリ一覧
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="/mypage">
                 マイページ
               </Link>
             </li>
             <li>
-              <Link onClick={handleMenuClose} href="/recruit">
+              <Link onClick={handleMenuClose} href="#">
                 ヘルプ
               </Link>
             </li>

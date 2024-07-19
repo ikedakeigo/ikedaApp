@@ -1,6 +1,6 @@
 import React from "react";
-import reviewData from "../../../../../data/reviews";
-import personData from "../../../../../data/person";
+import reviewData from "../../../../data/reviews";
+import personData from "../../../../data/person";
 
 const PersonReview = () => {
   const filteredData = personData.filter((person) => person.id === 1);

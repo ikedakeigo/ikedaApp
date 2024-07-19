@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import Link from "next/link";
 import ModalOpen from "./ModalOpen";
 
 const Modal = () => {
@@ -51,12 +52,12 @@ const Modal = () => {
             </li>
             <li className="flex items-center border rounded px-4 mb-2 h-14 border-gray-400 bg-red-100">
               <span className="flex-shrink-0 block font-bold w-18">荷物：</span>
-              <a
+              <button
                 className="flex-grow h-full flex items-center text-gray-600 truncate cursor-pointer"
                 onClick={() => setShowModal3(true)}
               >
                 荷物を選択{" "}
-              </a>
+              </button>
             </li>
             <li className="flex border rounded px-4 mb-2 h-14 border-gray-400 items-center">
               <span className="flex-shrink-0 block font-bold w-18">
@@ -74,7 +75,7 @@ const Modal = () => {
               </span>
             </li>
             <li className="border-gray-400 border rounded mb-2">
-              <a
+              <button
                 className="border rounded flex p-4"
                 data-backdrop="true"
                 data-target="#calendarModal"
@@ -90,7 +91,7 @@ const Modal = () => {
                   引越し希望日を選択
                 </div>
                 <div className="inline-block w-6 h-6 ml-auto"></div>
-              </a>
+              </button>
             </li>
           </ul>
           <div className="text-center pt-2">

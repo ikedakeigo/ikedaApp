@@ -2,7 +2,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css"; // デフォルトのテーマを読み込んでいます（コアスタイルのみ読み込む設定も可能）
 import axios from "axios";
 import { useEffect, useState } from "react";
-export const Slider = ({ list }) => {
+
+export const Slider = ({ list }: { list: any }) => {
   return (
     <>
       <Splide
@@ -13,7 +14,7 @@ export const Slider = ({ list }) => {
           interval: 3000, // 自動再生の間隔を3秒に設定
         }}
       >
-        {list.slider.map((item) => (
+        {list.slider.map((item: any) => (
           <SplideSlide key={item.id}>
             <img
               className="slide-img"

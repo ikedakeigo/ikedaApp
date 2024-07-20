@@ -18,9 +18,12 @@ const List = () => {
       });
   }, []);
 
+  console.log("list = ", list)
+
   return (
     <>
       {list.map((item) => {
+        //* @ts-ignore
         if (!item.id) {
           console.error("item.idが未定義です", item);
           return null; // item.idが未定義の場合は何もレンダリングしない

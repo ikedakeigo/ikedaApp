@@ -1,10 +1,18 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-const ModalOpen = ({ isvisible, onClose, children }) => {
-  if (!isvisible) return null;
+type Props = {
+  isVisible: boolean
+  onClose: () => void
+  children: ReactNode
+}
 
-  const handleClose = (e) => {
-    if( e.target.id === 'wrapper' ) onClose();
+const ModalOpen = ({ isVisible, onClose, children }: Props) => {
+  if (!isVisible) return null;
+
+  const handleClose = (e: any) => {
+    const target = e.target as HTMLElement
+
+    if( target.id === 'wrapper' ) onClose();
   }
 
   return (

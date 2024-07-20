@@ -1,6 +1,12 @@
 import React from "react";
 import selecterData from "../../data/selecter";
 
+type Selecter = {
+    value: string
+    dataUrl: string
+    title: string
+}
+
 const Selecter = () => {
   return (
     <>
@@ -10,10 +16,10 @@ const Selecter = () => {
             id="sorting"
             className="p-4 text-base border-solid border-2 border-indigo-600"
           >
-            {selecterData.map((selecter) => (
+            {selecterData.map((selecter: Selecter) => (
               <option
                 value={selecter.value}
-                data-url={selecter.url}
+                data-url={selecter.dataUrl}
                 key={selecter.value}
               >
                 {selecter.title}
